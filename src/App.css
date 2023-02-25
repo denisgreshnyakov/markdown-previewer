@@ -1,15 +1,16 @@
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  background-color: #87b5b5;
+  background-color: #adcfcf;
 }
 
 .App {
@@ -22,9 +23,9 @@ body {
 #editor {
   display: block;
   width: 594px;
-  min-height: 200px;
+  min-height: 20vh;
+  max-height: 80vh;
   background-color: #c0d8d8;
-
   resize: vertical;
 }
 
@@ -32,7 +33,7 @@ body {
   display: block;
   min-height: 100px;
   background-color: #c0d8d8;
-  padding: 50px 20px 50px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .block-editor {
@@ -40,15 +41,50 @@ body {
   width: 600px;
   background-color: #4aa3a3;
   margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .block-preview {
   display: block;
-  width: 900px;
+  width: 800px;
   background-color: #4aa3a3;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .top-panel {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.deploy:hover {
+  cursor: pointer;
+  color: #00d8e7;
+}
+
+img {
+  width: 100%;
+}
+
+blockquote {
+  border-left: 3px solid #224b4b;
+  padding-left: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
 }
