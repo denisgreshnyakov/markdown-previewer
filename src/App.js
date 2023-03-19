@@ -98,6 +98,15 @@ function App() {
           }
         </div>
       </div>
+      <div class="author">
+        Coded by{" "}
+        <a
+          target="_blank"
+          href="https://github.com/denisgreshnyakov/markdown-previewer"
+        >
+          Denis
+        </a>
+      </div>
     </div>
   );
 }
